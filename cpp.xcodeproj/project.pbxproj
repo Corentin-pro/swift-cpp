@@ -14,6 +14,7 @@
 		0710DE361CE3479A00095F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0710DE351CE3479A00095F32 /* Assets.xcassets */; };
 		0710DE391CE3479A00095F32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0710DE371CE3479A00095F32 /* LaunchScreen.storyboard */; };
 		0710DE431CE3480700095F32 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0710DE411CE3480700095F32 /* test.cpp */; };
+		07DA778A1D2A49670070B4CA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 07DA77891D2A49670070B4CA /* README.md */; };
 		07FA250E1CE44EB30045E66E /* wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07FA250D1CE44EB30045E66E /* wrapper.mm */; };
 		07FA25101CE45A4A0045E66E /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA250F1CE45A4A0045E66E /* test.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		0710DE401CE3480700095F32 /* cpp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cpp-Bridging-Header.h"; sourceTree = "<group>"; };
 		0710DE411CE3480700095F32 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 		0710DE421CE3480700095F32 /* test.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = test.hpp; sourceTree = "<group>"; };
+		07DA77891D2A49670070B4CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		07FA250C1CE44EA20045E66E /* wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wrapper.h; sourceTree = "<group>"; };
 		07FA250D1CE44EB30045E66E /* wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wrapper.mm; sourceTree = "<group>"; };
 		07FA250F1CE45A4A0045E66E /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 		0710DE1F1CE3479A00095F32 = {
 			isa = PBXGroup;
 			children = (
+				07DA77891D2A49670070B4CA /* README.md */,
 				0710DE2A1CE3479A00095F32 /* cpp */,
 				0710DE291CE3479A00095F32 /* Products */,
 			);
@@ -156,6 +159,7 @@
 				07FA250E1CE44EB30045E66E /* wrapper.mm in Sources */,
 				07FA25101CE45A4A0045E66E /* test.swift in Sources */,
 				0710DE341CE3479A00095F32 /* cpp.xcdatamodeld in Sources */,
+				07DA778A1D2A49670070B4CA /* README.md in Sources */,
 				0710DE431CE3480700095F32 /* test.cpp in Sources */,
 				0710DE2E1CE3479A00095F32 /* ViewController.swift in Sources */,
 				0710DE2C1CE3479A00095F32 /* AppDelegate.swift in Sources */,
