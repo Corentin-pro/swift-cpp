@@ -1,11 +1,3 @@
-//
-//  wrapper.m
-//  cpp
-//
-//  Created by Axopen on 12/05/2016.
-//  Copyright © 2016 perso. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import "wrapper.h"
 #import "test.hpp"

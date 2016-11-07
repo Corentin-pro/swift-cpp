@@ -1,11 +1,3 @@
-//
-//  test.cpp
-//  cpp
-//
-//  Created by Axopen on 11/05/2016.
-//  Copyright © 2016 perso. All rights reserved.
-//
-
 #include "test.hpp"
 
 

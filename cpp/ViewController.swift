@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  cpp
-//
-//  Created by Axopen on 11/05/2016.
-//  Copyright © 2016 perso. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController
@@ -16,7 +8,7 @@ class ViewController: UIViewController
     @IBOutlet var swiftProcessingLabel: UILabel!
     @IBOutlet var cppProcessingLabel: UILabel!
 
-    var testTimes = [NSTimeInterval]()
+    var testTimes = [TimeInterval]()
 
     override func viewDidLoad()
     {
@@ -50,7 +42,7 @@ class ViewController: UIViewController
     {
         for _ in 0...100
         {
-            let startTime = NSDate().timeIntervalSince1970
+            let startTime = Date().timeIntervalSince1970
 
             var usingTest: Int32 = 0
             for j: Int32 in 0...10_000
@@ -59,7 +51,7 @@ class ViewController: UIViewController
                 usingTest += j - test.hello()
             }
 
-            testTimes.append( NSDate().timeIntervalSince1970 - startTime )
+            testTimes.append( Date().timeIntervalSince1970 - startTime )
         }
     }
 
@@ -67,7 +59,7 @@ class ViewController: UIViewController
     {
         for _ in 0...100
         {
-            let startTime = NSDate().timeIntervalSince1970
+            let startTime = Date().timeIntervalSince1970
 
             var usingTest: Int32 = 0
             for j: Int32 in 0...10_000
@@ -76,7 +68,7 @@ class ViewController: UIViewController
                 usingTest += j - test.hello()
             }
 
-            testTimes.append( NSDate().timeIntervalSince1970 - startTime )
+            testTimes.append( Date().timeIntervalSince1970 - startTime )
         }
     }
 
@@ -84,7 +76,7 @@ class ViewController: UIViewController
     {
         for _ in 0...100
         {
-            let startTime = NSDate().timeIntervalSince1970
+            let startTime = Date().timeIntervalSince1970
 
             let test = TestClassCpp()
             for _ in 0...1000
@@ -92,7 +84,7 @@ class ViewController: UIViewController
                 test.process()
             }
 
-            testTimes.append( NSDate().timeIntervalSince1970 - startTime )
+            testTimes.append( Date().timeIntervalSince1970 - startTime )
         }
     }
 
@@ -100,7 +92,7 @@ class ViewController: UIViewController
     {
         for _ in 0...100
         {
-            let startTime = NSDate().timeIntervalSince1970
+            let startTime = Date().timeIntervalSince1970
 
             let test = TestClassSwift()
             for _ in 0...1000
@@ -108,14 +100,14 @@ class ViewController: UIViewController
                 test.process()
             }
 
-            testTimes.append( NSDate().timeIntervalSince1970 - startTime )
+            testTimes.append( Date().timeIntervalSince1970 - startTime )
         }
     }
 
-    func showResult(p_label: UILabel)
+    func showResult(_ p_label: UILabel)
     {
-        var minTime: NSTimeInterval = self.testTimes.first ?? 0
-        var maxTime: NSTimeInterval = self.testTimes.first ?? 0
+        var minTime: TimeInterval = self.testTimes.first ?? 0
+        var maxTime: TimeInterval = self.testTimes.first ?? 0
         var meanTime: Double = 0
 
         for time in self.testTimes
